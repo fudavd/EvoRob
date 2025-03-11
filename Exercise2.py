@@ -192,7 +192,7 @@ def main():
 
     # %% visualise
     # TODO: Make a video of the best individual, and plot the fitness curve.
-    best_individual = np.load(os.path.join(results_dir, "99", "x_best.npy"))
+    best_individual = np.load(os.path.join(results_dir, f"{CMAES_opts["num_generations"]-1}", "x_best.npy"))
 
     points, connectivity_mat = world.geno2pheno(best_individual)
     robot = PassiveWalkerRobot(points, connectivity_mat, world.joint_limits, verbose=False)
