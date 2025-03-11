@@ -113,7 +113,7 @@ def main():
     run_EA(ea, world)
 
     # %% Make video of best behaviour
-    best_individual = np.load(os.path.join(results_dir, "99", "x_best.npy"))
+    best_individual = np.load(os.path.join(results_dir, f"{CMAES_opts["num_generations"]-1}", "x_best.npy"))
     world.controller.geno2pheno(best_individual)
 
     generate_best_individual_video(world.controller)
