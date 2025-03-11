@@ -12,7 +12,8 @@ from src.utils.Filesys import get_project_root
     
     Exercise0 warm-up: This exercise is a warm-up to understanding the flow of information in the software. 
     In the previous exercise you built your own Evolutionary Strategy which will be used to optimise the parameters
-    in the reversed Ackley environment.
+    in the reversed Ackley environment. Additionally, we will integrate the original cmaes code built by Hansen et al.:
+    https://cma-es.github.io/index.html
 """
 
 ROOT_DIR = get_project_root()
