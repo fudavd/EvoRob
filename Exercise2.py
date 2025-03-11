@@ -11,7 +11,8 @@ import os
 """ Large programming projects are often modularised in different components. 
     In the upcoming exercise(s) we will (re)build an evolutionary pipeline for robot evolution in MuJoCo.
 
-    Exercise2 Morphology evolutions: Passive-Dynamic Walker
+    Exercise2 Morphology evolutions: In this exercise we will focus on morphology design of a Passive-Dynamic Walker.
+    The evolutionary optimisation is focused on the optimisation of leg lengths of this non-actuated system.
 """
 
 ROOT_DIR = get_project_root()
