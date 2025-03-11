@@ -1,4 +1,4 @@
-from src.EA.CMAES import CMAES_sol, CMAES_opts
+from src.EA.CMAES import CMAES, CMAES_opts
 from src.world.World import World
 from src.world.robot.morphology.PassiveWalkerRobot import PassiveWalkerRobot
 from src.utils.Filesys import get_project_root
@@ -185,7 +185,7 @@ def main():
 
     population_size = 100
 
-    ea = CMAES_sol(population_size, n_parameters, CMAES_opts, results_dir)
+    ea = CMAES(population_size, n_parameters, CMAES_opts, results_dir)
 
     # %% Optimise
     run_EA(ea, world)
