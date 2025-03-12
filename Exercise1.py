@@ -52,7 +52,7 @@ class CheetahWorld(World):
         self.geno2pheno(genotype)
 
         rewards_list = []
-        observations, info = self.env.reset()
+        observations, info = self.env.reset(seed=42)
         for step in range(n_sim_steps):
             action = self.controller.get_action(observations)
             observations, rewards, terminated, truncated, info = self.env.step(action)
