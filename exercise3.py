@@ -153,8 +153,8 @@ class AntWorld(World):
             # Store rewards for active environments only
             rewards_full[step, done_mask == False] = rewards[done_mask == False]
 
-            multi_obj_reward = np.array([infos[...], -infos[...]]).T  # TODO
-            multi_obj_rewards_full[step, done_mask == False] = multi_obj_reward[done_mask == False]
+            # multi_obj_reward = np.array([infos[...], -infos[...]]).T  # TODO
+            # multi_obj_rewards_full[step, done_mask == False] = multi_obj_reward[done_mask == False]
 
             # Update the done mask based on the "done" and "truncated" flags
             done_mask = done_mask | dones | truncated
